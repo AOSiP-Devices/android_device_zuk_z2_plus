@@ -22,7 +22,7 @@
 #
 
 # Inherit from common msm8996-common
--include device/zuk/msm8996-common/BoardConfigCommon.mk
+include device/zuk/msm8996-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/zuk/z2_plus
 
@@ -36,4 +36,4 @@ AUDIO_FEATURE_ENABLED_SPKR_PROTECTION := true
 TARGET_KERNEL_CONFIG := z2_plus_defconfig
 
 # inherit from the proprietary version
--include vendor/zuk/z2_plus/BoardConfigVendor.mk
+include vendor/zuk/z2_plus/BoardConfigVendor.mk

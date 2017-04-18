@@ -21,9 +21,6 @@
 # definition file).
 #
 
-# Inherit from vendor
-$(call inherit-product-if-exists, vendor/zuk/z2_plus/z2_plus-vendor.mk)
-
 # Inherit from msm8996-common
 $(call inherit-product, device/zuk/msm8996-common/msm8996.mk)
 
@@ -42,3 +39,6 @@ PRODUCT_PACKAGES += \
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
+
+# Inherit from vendor
+$(call inherit-product, vendor/zuk/z2_plus/z2_plus-vendor.mk)
